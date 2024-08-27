@@ -1,6 +1,11 @@
-"use client"
+import { Metadata } from "next";
 import "./globals.css";
-import { GlobalProvider } from "@/context/GlobalContext";
+import { GlobalProvider } from "@/components/provider/GlobalProvider";
+
+export const metadata: Metadata = {
+  title: "Fruit Store",
+  description: "E-commerce store for Fruits",
+};
 
 export default function RootLayout({
   children,

@@ -2,7 +2,7 @@
 import Auth from "@/components/auth/Auth";
 import Header from "@/components/header/Header";
 import HomeSection from "@/components/home/HomeSection";
-import { useGlobal } from "@/context/GlobalContext";
+import { useGlobal } from "@/components/provider/GlobalProvider";
 
 export default function Home() {
   const {isAuthOpen} = useGlobal();
